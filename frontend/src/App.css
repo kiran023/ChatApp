@@ -1,0 +1,163 @@
+/* Button to Open Modal */
+.open-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.open-button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Container */
+.modal-container {
+  position: fixed;
+  bottom: -100%; /* Initially hidden off-screen */
+  right: 8%;
+  width: 300px; /* Full width for mobile-like appearance */
+  height: 90%; /* Adjust height as needed */
+  background: white;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+  transition: bottom 0.3s ease; /* Smooth sliding animation */
+  border-radius: 10px 10px 0 0; /* Rounded top edges */
+  z-index: 1000; /* Above other elements */
+  overflow: hidden;
+}
+
+/* When Modal is Active */
+.modal-container.active {
+  bottom: 0; /* Slide into view */
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #aaa;
+}
+
+/* Modal Content */
+.modal-content {
+  padding: 20px;
+  text-align: center;
+}
+.chat-input-container {
+  position: absolute; /* Stick to the bottom of the modal */
+  bottom: 0;
+  left: 0;
+  width: 94%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  /* font-size: 16px; */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  /* font-size: 16px; */
+  color: #ffffff;
+  background-color: #25d366;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #1da953;
+}
+
+.message-bubble {
+  margin: 5px 0;
+  padding: 10px;
+  background: #dcf8c6;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+.chat-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
