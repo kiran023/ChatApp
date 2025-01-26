@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import io from 'socket.io-client';
 import { ChattingBox } from "./components/ChattingBox";
-const socket = io('https://chatapp-backend-jgdx.onrender.com');
+const socket = io('https://chatapp-backend-lznr.onrender.com');
 
 
 
